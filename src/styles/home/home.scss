@@ -35,6 +35,26 @@
     }
   }
 
+  &__content {
+    display: flex;
+    flex-direction: row;
+    margin-top: 50px;
+    min-height: 300px;
+    margin-left: 200px;
+  }
 
+  &__title {
+    border-right: 2px solid  #B7BEDB;
+    padding-right: 50px;
+  }
+
+  &__tools {
+    margin-left: 26px;
+
+    & select {
+      width: 500px;
+      margin-bottom: 16px;
+    }
+  }
 
 }

@@ -7,7 +7,7 @@ const Header: React.FC = () => {
             <NavLink className="navbar-brand" to="/">Bus schedule</NavLink>
                 <div className="navbar-nav mr-auto">
                     <NavLink className="nav-item nav-link" activeClassName='active__link' to="/">Home</NavLink>
-                    <NavLink className="nav-item nav-link" activeClassName='active__link' to="/">Features</NavLink>
+                    <NavLink className="nav-item nav-link" activeClassName='active__link' to="/">Schedule</NavLink>
                     <NavLink className="nav-item nav-link" activeClassName='active__link' to="/">About</NavLink>
                 </div>
         </nav>
