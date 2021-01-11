@@ -1,0 +1,60 @@
+.home {
+  min-height: 1080px;
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+
+  &__poster {
+    margin-top: 110px;
+    position: relative;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    & img {
+      height: 400px;
+      width: 85%;
+      opacity: 0.8;
+      border-radius: 8px;
+    }
+
+    & button {
+      transition: .5s ease;
+      opacity: 0;
+      position: absolute;
+      top: 50%;
+      left: 50%;
+      transform: translate(-50%, -50%);
+      -ms-transform: translate(-50%, -50%)
+    }
+
+    &:hover img {
+      opacity: 0.3;
+    }
+    &:hover button {
+      opacity: 1;
+    }
+  }
+
+  &__content {
+    display: flex;
+    flex-direction: row;
+    margin-top: 50px;
+    min-height: 300px;
+    margin-left: 200px;
+  }
+
+  &__title {
+    border-right: 2px solid  #B7BEDB;
+    padding-right: 50px;
+  }
+
+  &__tools {
+    margin-left: 26px;
+
+    & select {
+      width: 500px;
+      margin-bottom: 16px;
+    }
+  }
+
+}
