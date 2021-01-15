@@ -1,12 +1,15 @@
 import React from 'react';
 import Header from "../../templates/Header";
-import ScheduleNav from "./components/ScheduleNav";
+import {useScheduleRoutes} from "../../root/routes";
 
 const SchedulePage : React.FC = () => {
+
+    const routes = useScheduleRoutes();
+
     return (
         <div className='schedule'>
             <Header />
-            <ScheduleNav />
+            {routes}
         </div>
     );
 };
