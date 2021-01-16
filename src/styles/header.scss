@@ -5,7 +5,6 @@
 .navbar-nav {
   display: flex;
   flex-direction: row;
-
 }
 
 .nav-item {
@@ -14,4 +13,8 @@
 
 .navbar-brand {
   margin-left: 30px;
+}
+
+.active-link {
+  color: #B7BEDB;
 }

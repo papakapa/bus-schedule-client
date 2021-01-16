@@ -1,11 +1,11 @@
 import React, {useCallback} from "react";
-import Header from "./components/Header";
+import Header from "../../templates/Header";
 import {Cities} from '../../constants/cities';
 
 const HomePage : React.FC = () => {
 
     const rerenderCities = useCallback(() => {
-      return [...Array(Cities.len).keys()].map(el => <option value={Cities[el]}>{Cities[el]}</option>);
+      return [...Array(Cities.len).keys()].map(el => <option value={Cities[el]} key={Cities[el]}>{Cities[el]}</option>);
     },[]);
 
     return (
